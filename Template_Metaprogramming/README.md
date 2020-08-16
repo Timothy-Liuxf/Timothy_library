@@ -42,7 +42,23 @@ int main()
 ```
 
 ---
-  > **Notice: If you want to use cxx20, you should define `TIMOTHY_CXX20_SUPPORT` ahead of this file.**
+  > **Notice: If you want to use cxx20, you should define `TIMOTHY_CXX20_SUPPORT` ahead of this file.**  
+  > **Example:**
+
+  ```cpp
+  #define TIMOTHY_CXX20_SUPPORT
+  #include <metaalgorithm>
+  #include <iostream>
+  using std::cout;
+  using std::endl;
+  using namespace Timothy;
+  int main()
+  {
+      std::cout << meta_double<5.5>::val << std::endl;  //5.5
+      return 0;
+  }
+  ```
+
 ---
 
 + `factorial<unsigned int n>`: Calculate *n*!.  
