@@ -1,8 +1,7 @@
 /.vs/
-*.sln
 /Debug/
 /Release/
+/x64/
 /*/Debug/
 /*/Release/
-/*/*.vcxproj
-/*/*.vcxproj.*
+/*/x64/

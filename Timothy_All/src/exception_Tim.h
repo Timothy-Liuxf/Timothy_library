@@ -56,6 +56,13 @@ public:
 	empty_delegate() : t_exception("Call empty delegate!") {}
 };
 
+class empty_collection : public t_exception
+{
+public:
+	empty_collection(const std::string& collection = "collection") : 
+		t_exception("The collection " + collection + " is empty!") {}
+};
+
 template <typename outstream>
 inline outstream& operator<< (outstream& out, const t_exception& _Val)
 {
