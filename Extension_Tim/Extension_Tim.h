@@ -15,7 +15,7 @@ struct _Make_Revserse_t
 };
 
 template <typename Iteratable>
-_Make_Revserse_t<Iteratable> MakeReverse(Iteratable&& iteratable)
+inline _Make_Revserse_t<Iteratable> MakeReverse(Iteratable&& iteratable)
 {
 	return { iteratable };
 }
