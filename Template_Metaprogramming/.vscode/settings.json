@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.m": "matlab",
+        "type_traits": "cpp"
+    }
+}
